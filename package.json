@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm install --legacy-peer-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,13 +17,13 @@
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
+    "date-fns": "3.6.0",
     "lucide-react": "^0.479.0",
     "mongodb": "^6.14.2",
     "next": "15.2.2",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
-    "react-datepicker": "^6.5.0",
+    "react-day-picker": "^8.10.1",
     "react-dom": "^19.0.0",
     "react-google-places-autocomplete": "^4.1.0",
     "tailwind-merge": "^3.0.2",
@@ -34,8 +34,5 @@
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.2.2"
-  },
-  "overrides": {
-    "date-fns": "^4.1.0"
   }
 }
